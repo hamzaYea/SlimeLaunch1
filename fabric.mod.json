@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "slimelaunch",
+  "version": "${version}",
+  "name": "Slime Launch",
+  "description": "Right-click a slime ball while looking upward to launch yourself in that direction.",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.slimelaunch.SlimeLaunchMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.2",
+    "minecraft": "26.1.2",
+    "fabric-api": "*",
+    "java": ">=25"
+  }
+}
