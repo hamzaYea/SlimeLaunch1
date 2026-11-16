@@ -22,7 +22,7 @@ public class SlimeLaunchMod implements ModInitializer {
                     && player.getXRot() < 0.0F) {
 
                 // Apply the launch on the logical server only.
-                if (!level.isClientSide) {
+                if (!level.isClientSide()) {
                     player.setDeltaMovement(player.getLookAngle().scale(LAUNCH_STRENGTH));
                     player.hurtMarked = true;
                     stack.shrink(1);
